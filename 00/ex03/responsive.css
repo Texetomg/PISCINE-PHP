@@ -1,0 +1,32 @@
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CQXYw1vMmxb642zz-pyZpi2q4DJ2x79oR0ANtPWRAfgGFQ7a);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+table{
+    border-color: rgb(6, 15, 22);
+    color: black;
+    background-color:bisque;
+    font-size: 1vh;
+    font-weight: 1vw;
+}
+td{
+    text-align: center;
+    width: 1%;
+}
+.main{
+     text-align: center;
+     font-size: 120%;
+     font-weight: bold; 
+}
+.top{
+    font-size: 0.8vh;
+    font-weight: 0.8vw ;
+    text-align: right;
+    
+}
+.bot{
+    font-weight: 0.8vw ;
+    font-size:0.8vh;
+    text-align: left;
+}
