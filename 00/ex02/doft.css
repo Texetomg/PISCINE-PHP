@@ -1,0 +1,83 @@
+div.top, div.left, div.right, div.mid, div.form{
+    background-color: rgb(144,144,144);
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px;
+}
+table{
+    margin:auto;
+}
+td{
+    text-align:center;
+}
+td:hover{
+    border: 3px solid red;
+}
+div.form{
+    top:65%;   
+    position:absolute;
+    width:30%;
+    height: 15%;
+    margin-left:5%;
+    background-color:rgb(136,255,137);
+    padding:1%;
+}
+img.header{
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    width: 40%;
+    height: 90%;
+    position: center;;
+   border-radius: 15px;
+}
+img.loupa{
+    position: relative;
+    top: 20%;
+    right: -40%;
+    width: 15%;
+    height: 90%; 
+}
+img.close{
+    width: 1.5%;
+    position: relative;
+    right: -38%;
+}
+img.reload{
+    width: 1.5%;
+    right: -40%;
+    top: -60%;
+    position: relative;
+}
+div.top{
+    width: 80%;
+    height: 10%;
+    float: top;
+    margin: auto;  
+}
+div.left{
+    width: 30%;
+    margin-left: 40%;
+    height: 85%;
+}
+div.right{
+    margin-left: 30%;
+    width: 30%;
+    height: 85%;
+}
+div.mid{
+    width: 140%;
+    margin-left: -20%;
+}
+img.mid{
+    margin: 2%; 
+    width: 96%;
+    height: 96%;
+}
+div.grid{
+    margin-top: 1%;
+    display: grid;
+    grid-auto-rows: minmax(700px, auto);
+    grid-template-columns:  [col-line1] 30% [col-line2] 40% [col-line3] 30%;   
+}
+body{
+    background-color: rgb(80,80,80);
+}
