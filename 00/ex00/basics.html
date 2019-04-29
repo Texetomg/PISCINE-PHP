@@ -1,0 +1,65 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- basics.html                                        :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: bfalmer- <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/04/29 11:22:17 by bfalmer-          #+#    #+#            -->
+<!-- Updated: 2019/04/29 11:22:21 by bfalmer-         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+<HTML>
+<head>
+    <title>Basics</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        h1{
+            color: white;
+            text-align-last: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 400px;
+            grid-gap: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .item{
+            margin-bottom: 3%;
+            text-align: center;
+        }
+        footer{
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+        }
+       
+    </style>
+</head>
+<body>
+<h1>&#958;-shops</h1>
+<div class="grid">
+    <div class="item">
+        <img src="https://www.cmall.ru/_mod_files/ce_images/blog/kak-sozdat-internet-magazin-s.jpg">
+        <a href="https://ru.aliexpress.com/">Aliexpress</a>
+    </div>
+    <div class="item">
+        <img src="https://korzun.com.ua/pictures/art_tbn_fcSW4uZvtn.png">
+        <a href="https://www.ebay.com/">Ebay</a>
+    </div>
+</div>
+<hr/>
+<footer>
+    &copy;bfalmer- 2019
+</footer>
+</body>
+</HTML>
