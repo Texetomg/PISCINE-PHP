@@ -1,0 +1,26 @@
+{
+    "0001" : {
+        "name" : "яблоки",
+        "cost" : 12,
+        "description" : "Apples",
+        "image" : "imgs/apples.jpg"
+    },
+    "0002" : {
+        "name" : "вишня",
+        "cost" : 25,
+        "description" : "cherry",
+        "image" : "imgs/cherry.jpg"
+    },
+    "0003" : {
+        "name" : "лимоны",
+        "cost" : 25,
+        "description" : "lemons",
+        "image" : "imgs/lemons.jpg"
+    },
+    "0004" : {
+        "name" : "помидоры",
+        "cost" : 25,
+        "description" : "tomatos",
+        "image" : "imgs/tomatos.jpg"
+    }
+}
