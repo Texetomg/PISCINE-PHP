@@ -1,1 +1,1 @@
-CREATE DATABASE db_bfalmer-;
+CREATE DATABASE `db_bfalmer-`;
