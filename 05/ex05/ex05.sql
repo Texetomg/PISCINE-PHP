@@ -1,0 +1,1 @@
+DELETE FROM db_bfalmer.ft_table LIMIT 5;
