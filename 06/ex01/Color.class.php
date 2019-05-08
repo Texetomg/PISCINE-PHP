@@ -26,8 +26,9 @@
         public function __toString() {
             return sprintf("Color (red: %3d, green: %3d, blue %3d)", $this->red, $this->green, $this->blue);
         }
-        public static function doc() {
-            return file_get_contents('Color.doc.txt');
+        public static function doc()
+        {
+            return file_get_contents('Color.doc.txt') . PHP_EOL;;
         }
         public function add($color) {
             $red = $this->red + $color->red;

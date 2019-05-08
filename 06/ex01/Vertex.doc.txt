@@ -1,0 +1,18 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles:
+
+• _x axis coordinate
+• _y axis coordinate
+• _z depth coordinate
+• _w homogeneous coordinates. default is worth 1.0.
+• _color Color Class (Color.doc.txt).
+
+Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $green ) );
+
+Vertex get_prop($prop);
+    takes property value if any.
+    
+Vertex set_prop($prop);
+    change property value if any.
+---------------------------------------------------------------------- Vertex ->
