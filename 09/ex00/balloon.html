@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Balloon</title>
+	<style>
+		#balloon {
+			background-color: rgb(240, 0, 0);
+			transition: color 5s ease;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			margin: auto;
+			box-shadow: inset -10px -10px 40px #000, 5px 5px 20px black,inset 0px 0px 5px black;
+			/*vertical-align: center;*/
+		}
+	</style>
+</head>
+<body>
+	<div onClick="swell()" onmouseout="decrease()" id="balloon"></div>
+</body>
+<script type="text/javascript">
+	var element = document.getElementById('balloon');
+	function swell() {
+		if (element.style.backgroundColor == "rgb(240, 0, 0)" || element.style.backgroundColor == "")
+			element.style.backgroundColor = "rgb(0, 240, 0)";
+		else if (element.style.backgroundColor == "rgb(0, 240, 0)")
+			element.style.backgroundColor = "rgb(0, 0, 240)";
+		else if (element.style.backgroundColor == "rgb(0, 0, 240)")
+			element.style.backgroundColor = "rgb(240, 0, 0)";
+		if (element.offsetHeight == 420) {
+			element.style.height = 200 + 'px';
+			element.style.width = 200 + 'px';
+			element.style.backgroundColor = "rgb(240, 0, 0)";
+		}
+		element.style.height = element.offsetHeight + 10 + 'px';
+		element.style.width = element.offsetWidth + 10 + 'px';
+		element.style.backgroundColor += '#f00000';
+	}
+	function decrease() {
+		if (element.style.height > 200 + 'px' || element.style.height == "") {
+			element.style.height = element.offsetHeight - 10 + 'px';
+			element.style.width = element.offsetWidth - 10 + 'px';
+			if (element.style.backgroundColor == "")
+			element.style.backgroundColor = "rgb(0, 0, 240)";
+			else if (element.style.backgroundColor == "rgb(240, 0, 0)")
+				element.style.backgroundColor = "rgb(0, 0, 240)";
+			else if (element.style.backgroundColor == "rgb(0, 240, 0)")
+				element.style.backgroundColor = "rgb(240, 0, 0)";
+			else if (element.style.backgroundColor == "rgb(0, 0, 240)")
+				element.style.backgroundColor = "rgb(0, 240, 0)";
+		}
+	}
+</script>
+</html>
