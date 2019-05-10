@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calc</title>
+    <style>
+        .calc{
+            padding: 15px;
+            margin: 0px auto;
+            width: 150px;
+            height: 80px;
+            background-color: silver;
+            border-radius: 10%;
+        }
+    </style>
+    <script type="text/javascript">
+        window.setInterval(function func() {
+            alert( 'Please, use me...' );
+        }, 303000);
+
+        function calc() {
+            let left = document.getElementById("left").value;
+            let right = document.getElementById("right").value;
+            let operator = document.getElementById("operator").value;
+
+            if (right == "" || isNaN == "" || parseInt(right) < 0 || parseInt(left) < 0) {
+                alert("Error :(");
+                console.log("Error :(");
+            }
+            else if (parseInt(right) == 0 && (operator == '%' || operator == '/')) {
+                alert("It’s over 9000!");
+                console.log("It’s over 9000!");
+            }
+            else {
+                alert(eval (left + operator + right));
+                console.log(eval (left + operator + right));
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" id="left" value="">
+        <select  id="operator">
+            <option selected value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right" value="">
+        <input type="submit" id="try" onClick="calc()" value="Try me!">
+    </div>  
+</body>
+</html>
